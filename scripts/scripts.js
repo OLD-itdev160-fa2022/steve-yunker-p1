@@ -15,22 +15,6 @@ var price = 40,
     studentPriceEl.textContent = studentPrice.toFixed();
     childPriceEl.textContent = childPrice.toFixed();
 
-$(document).ready(function(){
-    $(".calculator").on("keyup",".quantityAdult", function(){
-
-        var ap = +$(".ap").data("ap");
-
-        
-        var qa = getElementById("quantityAdult").val();
-        var quantitySenior = +$(this).val();
-        var quantityStudent = +$(this).val();
-        var quantityChildren = +$(this).val();
-
-        $("#total").text("$" + ap * qa);
-
-    })
-})
-
 function getTotal(){
     var quantityAdult = Number(document.getElementById("quantityAdult").value);
     var quantitySenior = Number(document.getElementById("quantitySenior").value);
