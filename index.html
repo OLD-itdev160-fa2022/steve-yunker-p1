@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Creepster&display=swap">
+    <link rel="stylesheet" type="text/css" href="CSS/master.css">
+    <link rel="favicon" href="images/pumpkin2.png">
+    <title>Pumpkin Carving Workshop</title>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="images/pumpkin.jpg" alt="Pumpkin Logo">
+        <h1>
+            Pumpkin Carving Workshop
+        </h1>
+        </div>
+    </header>
+    <main>
+        <h2>Classes Available for All of October</h2>
+        <br>
+        <p id="class-desc">
+            Our classes are 2 hours long and are open to artists of all skill levels, even if you
+            have never carved a pumpkin! Classes are designed to be for all ages and we will be 
+            teaching a variety of techniques. 
+            <br>
+            We have discounts for seniors, students, and children; this class is meant for anyone! Below
+            you can see our prices. Pumpkins and carving equipment will be provided at class.
+            <br>
+            If you have any questions please calls us at 414-111-1111 or send us an email! 
+        </p>
+        <div class="price-design">
+        <h3 id="price-header">Prices</h3>
+        <img src="images/ghost.jpg" alt="Ghost">
+        <ul>
+            <p>Price: $<span id="price"></span></p>
+            <p>Senior Price: $<span id="senior-price"></span></p>
+            <p>Student Price: $<span id="student-price"></span></p>
+            <p>Child Price: $<span id="child-price"></span></p>
+        </ul>
+        </div>
+        <div class="calculator">
+            <h3>Price Calculator</h3>
+            <p>Adult: <input type="text" id="quantityAdult"></p>
+            <p>Senior: <input type="text" id="quantitySenior"></p>
+            <p>Student: <input type="text" id="quantityStudent"></p>
+            <p>Children: <input type="text" id="quantityChildren"></p>
+            <button type="button" onclick="getTotal()">Get Total</button>
+            <h4 id="total"></h4>
+            <br><br><br>
+        </div>
+    </main>
+    <footer>
+        <p><i>Milwaukee Pumpkin Carving &copy;</i></p>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
